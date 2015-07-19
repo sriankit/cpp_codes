@@ -1,6 +1,4 @@
 #include<stdio.h>
-#include<iostream>
-using namespace std;
 long table[1001][1001];
 int r[1001];
 int c[1001];
@@ -17,8 +15,7 @@ int main(){
     for(j=1;j<=m;j++)
         c[j]=j;
     while(q--){
-        //scanf("%c%d%d",&ch,&a,&b);
-        cin>>ch>>a>>b;
+        scanf("%c%d%d",ch,&a,&b);
         if(ch=='r'){
             int t=r[a];
             r[a]=r[b];
